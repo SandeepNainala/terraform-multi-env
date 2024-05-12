@@ -1,14 +1,14 @@
 variable "instance_name" {
   type = map
-  default = {
+  /*default = {
     db-dev = "t2.micro"
     backend-dev = "t2.small"
     frontend-dev = "t2.micro"
-  }
+  }*/
 }
 
 variable "environment" {
-  default = "dev"
+  #default = "dev"
 }
 
 variable "common_tags" {
