@@ -1,4 +1,4 @@
-bucket = "devops91-prod"
+bucket = "awsd78s-prod"
 key    = "multi-env-tfvars"
 region = "us-east-1"
-dynamodb_table = "devops91-prod"
+dynamodb_table = "awsd78s-prod"

@@ -5,8 +5,6 @@ resource "aws_route53_record" "expense" {
   #name = local.record_name
   type    = "A"
   ttl     = 300
-  records = startswith(each.key,"frontend") ? [each.value.public_ip] : [each.value.private_ip]
-  # count and count.index won't work in locals
-  #records = local.record_value
+  records = startswith(each.key, "frontend") ? [each.value.public_ip] : [each.value.private_ip]
   allow_overwrite = true
 }
