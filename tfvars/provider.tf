@@ -6,9 +6,9 @@ terraform {
     }
   }
   backend "s3" {
-
   }
 }
+
 
 #provide authentication here
 provider "aws" {
